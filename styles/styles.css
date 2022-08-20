@@ -636,9 +636,6 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .portfolio-window p{
   margin: 0;
 }
-body{
-  position: relative;
-}
 
 .backdrop{
   position: fixed;
@@ -646,7 +643,7 @@ body{
   height: 100%;
   top: 0;
   left: 0%;
-  background-color:rgba(0, 0, 0, 0.1);
+  background-color:rgba(0, 0, 0, 0.2);
 }
 .is-hidden{
   opacity: 0;
@@ -655,11 +652,29 @@ body{
 
 .modal{
 position: absolute;
-top: 6%;
-left: 46%;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);
 
 min-height: 528px;
-min-width: 571px;
-padding: 15px;
+min-width: 581px;
+padding: 8px;
 background-color: #FFFFFF;
+display: flex;
+justify-content: end;
+}
+.modal-close{
+border-radius: 50%;
+width: 33px;
+height: 33px;
+border: 1px solid var(--fill-space-color);
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.modal-icon{
+ width: 11px;
+ height: 11px;
+ color: var(--tytle-text-color);
 }

@@ -45,7 +45,7 @@
         <section class="section hero">
             <div class="container hero-tytler">
                 <h1 class="hero-tytle">Ефективні рішення для вашого бізнесу</h1>
-                <button class="btn btn-hero" type="button" data-open-modal>Замовити послугу</button>
+                <button class="btn btn-hero" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="section about">
@@ -345,12 +345,12 @@
             </div>
     </footer>
    
-    <div class="backdrop is-hiden" data-backdrop>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button data-close-modal>CLOSE</button>
+            <button class="modal-close"data-modal-close ><svg class="modal-icon"> <use href="./images/symbol-defs.svg#icon-cancel"></use> </svg></button>
         </div>
     </div>
-<script src>
+<script src="./js/modal.js">
 </script>
 </body>
 </html> 
