@@ -17,7 +17,9 @@
 html {
   box-sizing: border-box;
 }
-
+button{
+  cursor: pointer;
+}
 *,
 *::before,
 *::after {
@@ -198,9 +200,7 @@ background-color:var(--accent-color);
 
 }
 /*---------buttons-------*/
-.btn{
-  cursor: pointer;
-}
+
 .btn-portfolio {
   padding: 6px 22px;
   font-weight: 500;
@@ -422,6 +422,8 @@ padding: 27px 0 27px 0;
   width: 20px;
   height: 20px;
   fill: var(--fill-icon-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link-icon:hover,
@@ -687,8 +689,8 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
 }
 .modal-close{
 position: absolute;
-top: 0px;
-right: 0px;
+top: 8px;
+right: 8px;
 border-radius: 50%;
 width: 33px;
 height: 33px;
@@ -736,8 +738,9 @@ color: #212121;
   position: absolute;
   width: 18px;
   height: 18px;
-  top: 34px;
-  left:12px;
+  top: 36px;
+  left:15px;
+  
 }
 .abc:focus-within{
   fill:var(--accent-color);
@@ -785,7 +788,7 @@ line-height: 2;
   color: rgba(33, 150, 243, 1);
   margin-left: 5px;
 }
-.form-label-modalb{
+.form-label-modal{
   position: relative;
   appearance: none;
   border: 2px solid rgba(33, 33, 33, 1);
@@ -795,11 +798,11 @@ line-height: 2;
   margin-right: 8px;
 
 }
-.form-label-modalb:checked{
+.form-label-modal:checked{
   border: transparent;
 }
 
-.form-label-modalb:checked + .modal-check{
+.form-label-modal:checked + .modal-check{
   opacity: 1;
 }
 
@@ -837,6 +840,10 @@ line-height: 1.8;
   border-radius: 4px;
   width: 358px;
   padding: 15px;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus{
+  outline: 1px solid var(--accent-color);
 }
 .btn-follow{
   display: flex;
